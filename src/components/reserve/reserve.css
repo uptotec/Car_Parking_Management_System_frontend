@@ -1,0 +1,79 @@
+.Header {
+  display: flex;
+  justify-content: flex-start;
+  align-items: center;
+}
+
+.HearderTitle {
+  margin-left: 10px;
+}
+
+.Input {
+  display: block;
+  background: transparent;
+  font-family: JosefinSans-Bold;
+  font-size: 15px;
+  color: #fff;
+  line-height: 1.2;
+  outline: none;
+  border: 0.5px solid #fff;
+  height: 25px;
+  padding: 0 10px 0 23px;
+  margin-left: 10px;
+  width: 250px;
+  text-decoration: none;
+  font-family: 'Roboto', sans-serif;
+}
+
+.InputDiv {
+  display: flex;
+  align-items: center;
+  flex-direction: row;
+  justify-content: space-between;
+  margin-top: 10px;
+}
+
+.Button {
+  display: inline-block;
+  padding: 0.35em 1.2em;
+  border: 1px solid #ffffff;
+  box-sizing: border-box;
+  text-decoration: none;
+  font-family: 'Roboto', sans-serif;
+  font-weight: 300;
+  color: #000;
+  text-align: center;
+  background-color: #fff;
+}
+
+.Button-Width {
+  width: 250px;
+  margin-top: 10px;
+}
+
+.Results {
+  width: 500px;
+  justify-content: space-evenly;
+}
+
+.Buttons {
+  display: inline-block;
+  padding: 0.35em 1.2em;
+  border: 0.1em solid #ffffff;
+  margin: 20px 0.3em 0.3em 0;
+  border-radius: 0.12em;
+  box-sizing: border-box;
+  text-decoration: none;
+  font-family: 'Roboto', sans-serif;
+  font-weight: 300;
+  color: #ffffff;
+  text-align: center;
+  transition: all 0.2s;
+  background-color: transparent;
+  width: 170px;
+}
+
+.Buttons:hover {
+  color: #000000;
+  background-color: #ffffff;
+}

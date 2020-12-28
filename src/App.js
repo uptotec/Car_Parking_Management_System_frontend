@@ -1,23 +1,17 @@
-import logo from './logo.svg';
+import * as React from 'react';
 import './App.css';
+import Home from './components/home/home';
+import Receive from './components/receive/receive';
+import Reserve from './components/reserve/reserve';
 
 function App() {
+  const [page, setPage] = React.useState('Home');
+
   return (
     <div className="App">
-      <header className="App-header">
-        <img src={logo} className="App-logo" alt="logo" />
-        <p>
-          Edit <code>src/App.js</code> and save to reload.
-        </p>
-        <a
-          className="App-link"
-          href="https://reactjs.org"
-          target="_blank"
-          rel="noopener noreferrer"
-        >
-          Learn React
-        </a>
-      </header>
+      <div className="Container">
+     { page === 'Home' ? <Home setPage={setPage} /> : page === 'Reserve' ? <Reserve setPage={setPage} />: <Receive setPage={setPage} />}
+      </div>
     </div>
   );
 }
