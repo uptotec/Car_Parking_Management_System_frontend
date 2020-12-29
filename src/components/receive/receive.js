@@ -49,7 +49,7 @@ const Receive = ({setPage}) => {
           <label for="cpl">Car Plate Letters:</label>
           <input id="cpl"  className="Input" type="text" name="cpl" placeholder="Car Plate Letters" value={cpl} onChange={(e) => setCpl(e.target.value)}  />
       </div>
-      <button className="Button Button-Width" onClick={() => getPayment()}>Pay now</button>
+      <button className="Buttons Button-Width" onClick={() => getPayment()}>Pay now</button>
     </div>
   );
 

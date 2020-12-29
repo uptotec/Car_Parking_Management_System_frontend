@@ -74,7 +74,7 @@ const Reserve = ({setPage}) => {
       <label for="Phone_Num">Phone Number:</label>
       <input id="Phone_Num"  className="Input" type="text" name="Phone_Num" placeholder="Phone Number" onChange={(e) => setPhone(e.target.value)} value={Phone_Num} disabled={foundCustomer} />
     </div>
-    { foundCustomer === null ? <button className="Button Button-Width" onClick={() => findCustomer()}><IoSearch /></button> : null}
+    { foundCustomer === null ? <button className="Button-Width Buttons" onClick={() => findCustomer()}><IoSearch /></button> : null}
     {foundCustomer === null ? null : foundCustomer ===  true ?
     <div className="InputDiv">
       <label for="Name">Full Name:</label>
@@ -97,7 +97,7 @@ const Reserve = ({setPage}) => {
         <label for="cpl">Car Plate Letters:</label>
         <input id="cpl"  className="Input" type="text" name="cpl" placeholder="Car Plate Letters" onChange={(e) => setCpl(e.target.value)} value={cpl} disabled={foundCar} />
         </div>
-        {foundCar === null ? <button className="Button Button-Width" onClick={() => findCar()}><IoSearch /></button> : null}
+        {foundCar === null ? <button className="Buttons Button-Width" onClick={() => findCar()}><IoSearch /></button> : null}
       </div>
       :
       null
@@ -126,7 +126,7 @@ const Reserve = ({setPage}) => {
         </div>
       </div>
     }
-    {foundCar !== null ? <button className="Button Button-Width" onClick={() => reserveSlot()}>Reserve Slot</button> : null}
+    {foundCar !== null ? <button className="Buttons Button-Width" onClick={() => reserveSlot()}>Reserve Slot</button> : null}
   </div>
   );
 
