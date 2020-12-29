@@ -1,5 +1,5 @@
 import * as React from 'react'
-import {IoArrowBack, IoSearch} from 'react-icons/io5';
+import {IoArrowBack} from 'react-icons/io5';
 import axios from 'axios';
 
 import './receive.css';
