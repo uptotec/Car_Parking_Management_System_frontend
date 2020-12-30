@@ -52,7 +52,7 @@ const Reserve = ({setPage}) => {
       Car_Plate_Letters: cpl,
       Color: Color || Car.Color,
       Model: Model || Car.Model,
-      rate: 100
+      rate: 25
     });
 
     if(slot.data){

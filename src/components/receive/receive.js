@@ -56,9 +56,9 @@ const Receive = ({setPage}) => {
   const paymentScreen = (
     <div>
       <h2>Your Payment Details</h2>
-      <h5>Enter time: {new Date(paymentInfo.Entering_Time).toLocaleDateString()}</h5>
-      <h5>Exit time: {new Date(paymentInfo.Exit_Time).toLocaleDateString()}</h5>
-      <h5>Duration: {parseFloat(paymentInfo.Duration_Time).toFixed(2)}</h5>
+      <h5>Enter time: {new Date(paymentInfo.Entering_Time).toLocaleString()}</h5>
+      <h5>Exit time: {new Date(paymentInfo.Exit_Time).toLocaleString()}</h5>
+      <h5>Duration: {parseFloat(paymentInfo.Duration_Time).toFixed(2)} Hours</h5>
       <h5>Cost Per Hour: {parseFloat(paymentInfo.Hourly_Rate).toFixed(2)} EGP</h5>
       <h5>Total cost: {parseFloat(paymentInfo.cost).toFixed(2)} EGP</h5>
        <button className="Buttons" onClick={() => setPage('Home')}>Return</button>

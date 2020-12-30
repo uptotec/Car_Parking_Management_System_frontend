@@ -1,5 +1,6 @@
 import React from 'react'
 import './home.css';
+import logo from '../../img/car-logo-white.png';
 import axios from 'axios';
 
 export const Home = ({setPage}) => {
@@ -19,6 +20,7 @@ export const Home = ({setPage}) => {
 
   return (
     <div>
+      <img src={logo} alt="logo" className="Img" />
       <h2>Parking Management System</h2>
       {count ? `Empty Slots is ${count}` : ''}
       <div>
